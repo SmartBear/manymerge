@@ -12,7 +12,7 @@ import { Message } from './types';
  * It always takes the latest clock and does not
  * assume any ordering in changes (which is fine).
  */
-export function squash(msgOne: Message, msgTwo: Message) {
+export function squash(msgOne: Message, msgTwo: Message): Message {
   const changes = (msgOne.changes || []).concat(msgTwo.changes || []);
   const clock = union(msgOne.clock, msgTwo.clock);
   return {

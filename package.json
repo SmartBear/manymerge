@@ -9,13 +9,13 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsc",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsc"
   },
   "peerDependencies": {
-    "automerge": "^0.13.0",
+    "automerge": "^0.14.0",
     "immutable": "^3.8.2"
   },
   "husky": {

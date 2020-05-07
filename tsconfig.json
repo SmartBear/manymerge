@@ -1,13 +1,14 @@
 {
   "include": ["src", "types", "test"],
   "compilerOptions": {
+    "outDir": "dist/",
     "target": "es5",
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
+    "module": "commonjs",
+    "lib": ["es2018"],
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./",
+    "rootDir": "src",
     "strict": false,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -20,11 +21,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react",
+    "baseUrl": "src/",
     "esModuleInterop": true
   }
 }
