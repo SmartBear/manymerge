@@ -1,5 +1,5 @@
 {
-  "name": "manymerge",
+  "name": "@cucumber/manymerge",
   "version": "2.5.4",
   "license": "MIT",
   "main": "dist/index.js",
